@@ -17,4 +17,6 @@ class Textbook:
     def deducting_inventory(self, qty):
         if self.quantity >= qty:
             self.quantity = self.quantity - qty
-            return
+            return 0
+        else:
+            return 1
